@@ -14,7 +14,7 @@ with open("css/style.css") as f:
 #@st.cache
 def read_file():
     df = pd.read_excel('Rough_data.xlsx', '8 Days - 3 times',
-                        skiprows=2)
+                        skiprows=2,engine='openpyxl')
     return df
 
 
