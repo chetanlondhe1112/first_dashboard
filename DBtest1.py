@@ -11,7 +11,7 @@ with open("css/style.css") as f:
     st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True) 
 
 
-@st.cache
+#@st.cache
 def read_file():
     df = pd.read_excel('DATA - Collection and Analysis - (Rough data).XLSX', '8 Days - 3 times',
                         skiprows=2)
